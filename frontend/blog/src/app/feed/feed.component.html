@@ -38,6 +38,15 @@
             <hr class="mt-5 mt-5">
 
             <h3 class="text-center mb-5 text-monospace">comentários adicionados</h3>
+            <div class="card mb-4" *ngFor="let post of listPost">
+                <div class="card-header">
+                    <h5 class="card-title">{{post.id}}</h5>
+                </div>
+                <div class="car-body">
+                    <p class="card-text">{{post.nome}}</p>
+                    <p class="card-text">{{post.mensagem}}</p>
+                </div>
+            </div>
 
         </div>
     </div>
